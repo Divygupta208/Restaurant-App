@@ -1,0 +1,39 @@
+.header-main {
+  width: 100vw;
+  height: 40vh;
+  background-color: #942b1d;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-title {
+  margin-left: 2%;
+  padding: 1%;
+  color: white;
+}
+.header-cart {
+  background-color: #57021c;
+  padding: 0px 100px;
+  color: white;
+  border-radius: 50px;
+  margin-right: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cart-count {
+  background-color: #e86513;
+  padding: 3px 15px;
+
+  border-radius: 50px;
+}
+.header-image .image {
+  width: 100vw;
+  height: 35vh;
+
+  background-color: #fff;
+}
