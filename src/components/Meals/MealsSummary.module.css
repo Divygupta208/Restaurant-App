@@ -1,0 +1,17 @@
+.box {
+  position: fixed;
+  top: 30vh;
+  left: 23vw;
+  z-index: 20;
+  background-color: #313131;
+  width: 50vw;
+  height: 30vh;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 8px #000000a9;
+}
+
+.title {
+  margin-left: 10vw;
+  color: white;
+}
