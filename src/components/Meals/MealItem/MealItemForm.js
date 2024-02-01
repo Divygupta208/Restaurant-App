@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useContext, useReducer } from "react";
 import classes from "./MealItemForm.module.css";
 import Input from "../../UI/Input";
+import CartContext from "../../../store/cart-context";
+
 const MealItemForm = (props) => {
+  const cartCtx = useContext(CartContext);
+
+  const addItemToCart = (event) => {
+    event.preventDefault();
+    cartCtx.addItem(props.item);
+  };
+
   return (
     <form className={classes.form}>
       <Input
@@ -15,7 +24,7 @@ const MealItemForm = (props) => {
           defaultValue: "1",
         }}
       />
-      <button>+ Add</button>
+      <button onClick={addItemToCart}>+ Add</button>
     </form>
   );
 };
